@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="332" height="118" viewBox="0 0 332 118">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g font-family="Times New Roman, Segoe UI Symbol, serif" fill="#111">
+<line class="staffline" x1="38.0" y1="34.0" x2="320.0" y2="34.0" stroke="#222" stroke-width="0.8"/>
+<line class="staffline" x1="38.0" y1="42.0" x2="320.0" y2="42.0" stroke="#222" stroke-width="0.8"/>
+<line class="staffline" x1="38.0" y1="50.0" x2="320.0" y2="50.0" stroke="#222" stroke-width="0.8"/>
+<line class="staffline" x1="38.0" y1="58.0" x2="320.0" y2="58.0" stroke="#222" stroke-width="0.8"/>
+<line class="staffline" x1="38.0" y1="66.0" x2="320.0" y2="66.0" stroke="#222" stroke-width="0.8"/>
+<text x="40.0" y="61.5" font-size="70.4">𝄞</text>
+<text x="84.0" y="44.8" font-size="12.0" font-weight="600">4</text>
+<text x="84.0" y="58.8" font-size="12.0" font-weight="600">4</text>
+<line class="barline" x1="96.0" y1="34.0" x2="96.0" y2="66.0" stroke="#222" stroke-width="1.4"/>
+<text x="99.0" y="22.0" font-size="10" fill="#666">1</text>
+<line x1="316.0" y1="34.0" x2="316.0" y2="66.0" stroke="#222" stroke-width="1.4"/>
+<line x1="86.0" y1="66.0" x2="106.0" y2="66.0" stroke="#222" stroke-width="0.8"/>
+<line x1="86.0" y1="74.0" x2="106.0" y2="74.0" stroke="#222" stroke-width="0.8"/>
+<line x1="86.0" y1="82.0" x2="106.0" y2="82.0" stroke="#222" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000001" cx="96.0" cy="82.0" rx="4.2" ry="3.2" fill="#111" transform="rotate(-12 96.0 82.0)"/>
+<line class="stem" x1="99.8" y1="82.0" x2="99.8" y2="54.8" stroke="#111" stroke-width="0.9"/>
+<line x1="130.0" y1="66.0" x2="150.0" y2="66.0" stroke="#222" stroke-width="0.8"/>
+<line x1="130.0" y1="74.0" x2="150.0" y2="74.0" stroke="#222" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000002" cx="140.0" cy="74.0" rx="4.2" ry="3.2" fill="#111" transform="rotate(-12 140.0 74.0)"/>
+<line class="stem" x1="143.8" y1="74.0" x2="143.8" y2="46.8" stroke="#111" stroke-width="0.9"/>
+<ellipse class="note" data-id="L00000003" cx="184.0" cy="66.0" rx="4.2" ry="3.2" fill="#111" transform="rotate(-12 184.0 66.0)"/>
+<line class="stem" x1="187.8" y1="66.0" x2="187.8" y2="38.8" stroke="#111" stroke-width="0.9"/>
+<ellipse class="note" data-id="L00000004" cx="228.0" cy="58.0" rx="4.2" ry="3.2" fill="#111" transform="rotate(-12 228.0 58.0)"/>
+<line class="stem" x1="231.8" y1="58.0" x2="231.8" y2="30.8" stroke="#111" stroke-width="0.9"/>
+<ellipse class="note" data-id="L00000005" cx="272.0" cy="50.0" rx="4.2" ry="3.2" fill="#111" transform="rotate(-12 272.0 50.0)"/>
+<line class="stem" x1="268.2" y1="50.0" x2="268.2" y2="77.2" stroke="#111" stroke-width="0.9"/>
+<text x="96.0" y="82.0" font-size="11" font-style="italic" fill="#333">ff</text>
+<line x1="99.8" y1="54.8" x2="231.8" y2="54.8" stroke="#111" stroke-width="3.2"/>
+<path d="M 268.2,77.2 C 277.2,70.2 277.2,77.2 268.2,77.2" fill="#111"/>
+</g></svg>

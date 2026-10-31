@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="614" viewBox="0 0 232 614">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="40.0" y="524.0" width="192.0" height="6.0" fill="#f2f2f2"/>
+<rect x="40.0" y="452.0" width="192.0" height="6.0" fill="#f2f2f2"/>
+<rect x="40.0" y="380.0" width="192.0" height="6.0" fill="#f2f2f2"/>
+<rect x="40.0" y="308.0" width="192.0" height="6.0" fill="#f2f2f2"/>
+<rect x="40.0" y="236.0" width="192.0" height="6.0" fill="#f2f2f2"/>
+<rect x="40.0" y="164.0" width="192.0" height="6.0" fill="#f2f2f2"/>
+<rect x="40.0" y="92.0" width="192.0" height="6.0" fill="#f2f2f2"/>
+<rect x="40.0" y="20.0" width="192.0" height="6.0" fill="#f2f2f2"/>
+<rect class="note" data-id="L00000001" x="40.0" y="308.0" width="96.0" height="5.0" fill="#2b6cb0" fill-opacity="0.68"/>
+<rect class="note" data-id="L00000002" x="40.0" y="284.0" width="96.0" height="5.0" fill="#2b6cb0" fill-opacity="0.68"/>
+<rect class="note" data-id="L00000003" x="40.0" y="266.0" width="96.0" height="5.0" fill="#2b6cb0" fill-opacity="0.68"/>
+<rect class="note" data-id="L00000004" x="136.0" y="278.0" width="96.0" height="5.0" fill="#2b6cb0" fill-opacity="0.68"/>
+<rect class="note" data-id="L00000005" x="136.0" y="254.0" width="96.0" height="5.0" fill="#2b6cb0" fill-opacity="0.68"/>
+<rect class="note" data-id="L00000006" x="136.0" y="236.0" width="96.0" height="5.0" fill="#2b6cb0" fill-opacity="0.68"/>
+<line x1="40.0" y1="548.0" x2="232.0" y2="548.0" stroke="#999" stroke-width="0.5"/>
+<text x="2" y="561.0" font-size="9" fill="#555">sustain</text>
+<rect class="pedal" data-kind="sustain" x="40.0" y="552.0" width="192.0" height="12.0" fill="#b7791f" fill-opacity="0.55"/>
+<line x1="40.0" y1="566.0" x2="232.0" y2="566.0" stroke="#999" stroke-width="0.5"/>
+<text x="2" y="579.0" font-size="9" fill="#555">sostenuto</text>
+<rect class="pedal" data-kind="sostenuto" x="136.0" y="574.8" width="96.0" height="7.2" fill="#b7791f" fill-opacity="0.55"/>
+<line class="barline" x1="40.0" y1="20.0" x2="40.0" y2="548.0" stroke="#444" stroke-width="0.9"/>
+</svg>

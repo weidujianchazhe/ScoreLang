@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1236" height="126" viewBox="0 0 1236 126">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<line class="staffline" x1="36.0" y1="66.0" x2="1236.0" y2="66.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="58.0" x2="1236.0" y2="58.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="50.0" x2="1236.0" y2="50.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="42.0" x2="1236.0" y2="42.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="34.0" x2="1236.0" y2="34.0" stroke="#333" stroke-width="0.7"/>
+<text class="clef" x="4" y="64.0" font-size="16" fill="#333">𝄞</text>
+<ellipse class="note" data-id="L00000001" cx="36.0" cy="46.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="39.2" y1="46.0" x2="39.2" y2="20.4" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000002" cx="51.0" cy="46.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="54.2" y1="46.0" x2="54.2" y2="20.4" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000003" cx="126.0" cy="38.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="129.2" y1="38.0" x2="129.2" y2="12.4" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000004" cx="158.4" cy="34.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="155.2" y1="34.0" x2="155.2" y2="59.6" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000005" cx="165.6" cy="38.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="168.8" y1="38.0" x2="168.8" y2="12.4" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000006" cx="246.0" cy="30.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="242.8" y1="30.0" x2="242.8" y2="55.6" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000007" cx="261.0" cy="26.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="257.8" y1="26.0" x2="257.8" y2="51.6" stroke="#111" stroke-width="0.8"/>
+<line class="ledger" x1="256.0" y1="26.0" x2="266.0" y2="26.0" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000008" cx="276.0" cy="30.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="272.8" y1="30.0" x2="272.8" y2="55.6" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000009" cx="291.0" cy="26.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="287.8" y1="26.0" x2="287.8" y2="51.6" stroke="#111" stroke-width="0.8"/>
+<line class="ledger" x1="286.0" y1="26.0" x2="296.0" y2="26.0" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000010" cx="306.0" cy="30.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="302.8" y1="30.0" x2="302.8" y2="55.6" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000011" cx="321.0" cy="26.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="317.8" y1="26.0" x2="317.8" y2="51.6" stroke="#111" stroke-width="0.8"/>
+<line class="ledger" x1="316.0" y1="26.0" x2="326.0" y2="26.0" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000012" cx="336.0" cy="30.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="332.8" y1="30.0" x2="332.8" y2="55.6" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000013" cx="351.0" cy="26.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="347.8" y1="26.0" x2="347.8" y2="51.6" stroke="#111" stroke-width="0.8"/>
+<line class="ledger" x1="346.0" y1="26.0" x2="356.0" y2="26.0" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000014" cx="366.0" cy="30.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="362.8" y1="30.0" x2="362.8" y2="55.6" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000015" cx="381.0" cy="26.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="377.8" y1="26.0" x2="377.8" y2="51.6" stroke="#111" stroke-width="0.8"/>
+<line class="ledger" x1="376.0" y1="26.0" x2="386.0" y2="26.0" stroke="#111" stroke-width="0.8"/>
+<line class="beam" x1="39.2" y1="20.4" x2="54.2" y2="20.4" stroke="#111" stroke-width="2.4"/>
+<line class="beam" x1="129.2" y1="28.1" x2="168.8" y2="28.1" stroke="#111" stroke-width="2.4"/>
+<line class="beam" x1="264.2" y1="53.2" x2="324.2" y2="53.2" stroke="#111" stroke-width="2.4"/>
+<line class="beam" x1="339.2" y1="53.6" x2="384.2" y2="53.6" stroke="#111" stroke-width="2.4"/>
+<line class="barline" x1="336.0" y1="34.0" x2="336.0" y2="66.0" stroke="#444" stroke-width="0.9"/>
+</svg>

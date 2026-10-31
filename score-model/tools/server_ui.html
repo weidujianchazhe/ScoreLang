@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><title>pianomusic MS 编辑器</title>
+<style>
+ body{font:14px/1.5 system-ui,sans-serif;margin:0;display:flex;height:100vh}
+ #side{width:340px;border-right:1px solid #ddd;padding:10px;overflow:auto}
+ #main{flex:1;overflow:auto;padding:10px;background:#fafafa}
+ table{border-collapse:collapse;width:100%;font-size:12px}
+ td,th{border-bottom:1px solid #eee;padding:2px 4px;text-align:left}
+ input{width:90px}
+ .err{color:#b00;font-size:12px;white-space:pre-wrap}
+ button{margin:2px 4px 2px 0}
+ svg{max-width:100%;height:auto;background:#fff;border:1px solid #eee}
+</style></head><body>
+<div id="side">
+  <h3>pianomusic</h3>
+  <div><select id="samples"></select> <button onclick="openSample()">打开</button></div>
+  <div style="margin:8px 0">
+    <select id="fmt"><option value="pianoroll">事件谱</option><option value="jianpu">简谱</option>
+    <option value="staff2">五线规范</option><option value="staff">五线(简)</option></select>
+    <select id="mode"><option value="melody">单旋律</option><option value="two_hands">双手</option>
+    <option value="chords">和弦</option></select>
+    <input id="meter" value="4/4" size="4"> <input id="tb" value="500000" size="7">
+    <button onclick="redraw()">重绘</button>
+  </div>
+  <div><button onclick="undo()">撤销</button><button onclick="redo()">重做</button>
+       <button onclick="save()">保存</button>
+       <a href="#" onclick="dl();return false">导出MIDI</a></div>
+  <div id="status"></div>
+  <div class="err" id="errs"></div>
+  <div id="events" style="margin-top:8px"></div>
+  <div id="pedals" style="margin-top:8px"></div>
+</div>
+<div id="main"><div id="canvas">（未打开文件）</div></div>
+<script>
+let cur=null;
+async function api(u,opt){const r=await fetch(u,opt);const j=await r.json().catch(()=>({}));if(!r.ok)throw j;return j}
+async function init(){const s=await api('/api/samples');const sel=document.getElementById('samples');
+  sel.innerHTML=s.samples.map(n=>`<option>${n}</option>`).join('');}
+async function openSample(){const name=document.getElementById('samples').value;
+  const j=await api('/api/open',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({name})});cur=j;renderDoc(j);redraw();}
+function renderDoc(j){document.getElementById('status').textContent=
+  `${j.path} · ${j.doc.events.length} 事件 · ${j.doc.pedals.length} 踏板`;
+  document.getElementById('errs').textContent=(j.errors||[]).join('\\n');
+  const rows=j.doc.events.map(e=>`<tr><td>${e.id}</td>
+   <td><input value="${e.onset_us}" onchange="edit('${e.id}','onset_us',this.value)"></td>
+   <td><input value="${e.release_us??''}" onchange="edit('${e.id}','release_us',this.value)"></td>
+   <td><input value="${e.semitone}" onchange="edit('${e.id}','semitone',this.value)"></td>
+   <td><input value="${e.dynamics_permille??''}" onchange="dyn('${e.id}',this.value)"></td></tr>`).join('');
+  document.getElementById('events').innerHTML=
+    `<table><tr><th>id</th><th>起点µs</th><th>终点µs</th><th>音高</th><th>力度‰</th></tr>${rows}</table>`;
+  const prows=j.doc.pedals.map((p,i)=>`<tr><td>${i}</td><td>${p.kind}</td>
+   <td>${p.start_us}</td><td>${p.end_us??''}</td><td>${p.depth}</td>
+   <td><button onclick="delPedal(${i})">删</button></td></tr>`).join('');
+  document.getElementById('pedals').innerHTML=
+    `<table><tr><th>#</th><th>踏板</th><th>起µs</th><th>止µs</th><th>深度‰</th><th></th></tr>${prows}</table>
+     <div><select id="pk"><option>sustain</option><option>sostenuto</option><option>una_corda</option></select>
+     <input id="ps" value="${j.doc.events.length?0:0}" size="8">
+     <input id="pe" value="" size="8" placeholder="止(可空)">
+     <input id="pd" value="1000" size="5">
+     <button onclick="addPedal()">加踏板</button></div>`;}
+function q(){const p=new URLSearchParams({fmt:document.getElementById('fmt').value,
+  mode:document.getElementById('mode').value,meter:document.getElementById('meter').value,
+  tb:document.getElementById('tb').value});return p.toString()}
+async function redraw(){if(!cur)return;const r=await fetch('/api/render?'+q());
+  if(r.ok){document.getElementById('canvas').innerHTML=await r.text();}
+  else{document.getElementById('errs').textContent=(await r.json()).error||'渲染失败';}}
+async function edit(id,field,val){const changes={};changes[field]=parseInt(val,10);
+  await post('/api/edit',{op:'update_event',id,changes});}
+async function dyn(id,val){await post('/api/edit',{op:'set_dynamics',id,permille:val?parseInt(val,10):null});}
+async function post(u,body){const j=await api(u,{method:'POST',headers:{'Content-Type':'application/json'},
+  body:JSON.stringify(body)});cur=j;renderDoc(j);redraw();return j}
+async function undo(){await post('/api/undo',{})}
+async function redo(){await post('/api/redo',{})}
+async function save(){await post('/api/save',{})}
+async function addPedal(){const body={op:'add_pedal',kind:document.getElementById('pk').value,
+  start_us:parseInt(document.getElementById('ps').value||'0',10),
+  depth:parseInt(document.getElementById('pd').value||'1000',10)};
+  const pe=document.getElementById('pe').value; if(pe)body.end_us=parseInt(pe,10);
+  await post('/api/edit',body);}
+async function delPedal(i){await post('/api/edit',{op:'delete_pedal',index:i});}
+function dl(){const tb=document.getElementById('tb').value;location.href='/api/midi?tb='+tb;}
+init();
+</script></body></html>

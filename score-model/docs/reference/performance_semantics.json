@@ -1,0 +1,147 @@
+{
+ "articulations": {
+  "staccato": {
+   "gate_pm": 500,
+   "vel_pm": 1000,
+   "src": "MuseScore instruments.xml"
+  },
+  "staccatissimo": {
+   "gate_pm": 330,
+   "vel_pm": 1000,
+   "src": "MuseScore instruments.xml"
+  },
+  "tenuto": {
+   "gate_pm": 1000,
+   "vel_pm": 1000,
+   "src": "MuseScore instruments.xml"
+  },
+  "marcato": {
+   "gate_pm": 670,
+   "vel_pm": 1200,
+   "src": "MuseScore instruments.xml"
+  },
+  "accent": {
+   "gate_pm": 1000,
+   "vel_pm": 1200,
+   "src": "约定（仪器文件无独立定义）"
+  }
+ },
+ "ornaments": {
+  "grace_short": {
+   "rule": "主音前 25%（从前音借时间）",
+   "pm": 250
+  },
+  "appoggiatura_long": {
+   "rule": "拍上占主音 50%（从主音借）",
+   "pm": 500
+  },
+  "mordent": {
+   "rule": "辅助音占 10%，需上邻音",
+   "pm": 100
+  },
+  "turn": {
+   "rule": "四音各 15%，需上/下邻音",
+   "pm": 150
+  },
+  "trill": {
+   "rule": "主音/上邻音交替，实测 10 次/秒",
+   "hz": 10
+  }
+ },
+ "turns": {
+  "bow_change": {
+   "kind": "friction",
+   "sec": 0.03,
+   "gain": 0.09,
+   "band": 0.55
+  },
+  "breath": {
+   "kind": "air",
+   "sec": 0.045,
+   "gain": 0.07,
+   "band": 0.15
+  },
+  "mallet": {
+   "kind": "wood",
+   "sec": 0.025,
+   "gain": 0.1,
+   "band": 0.3
+  },
+  "retrigger": {
+   "kind": "click",
+   "sec": 0.012,
+   "gain": 0.08,
+   "band": 0.85
+  },
+  "restrike": {
+   "kind": "click",
+   "sec": 0.01,
+   "gain": 0.07,
+   "band": 0.95
+  },
+  "key_noise": {
+   "kind": "click",
+   "sec": 0.02,
+   "gain": 0.04,
+   "band": 0.6
+  },
+  "key_click": {
+   "kind": "click",
+   "sec": 0.014,
+   "gain": 0.05,
+   "band": 0.9
+  },
+  "inhale": {
+   "kind": "air",
+   "sec": 0.12,
+   "gain": 0.05,
+   "band": 0.1
+  },
+  "col_legno": {
+   "kind": "wood",
+   "sec": 0.02,
+   "gain": 0.12,
+   "band": 0.45
+  },
+  "brush": {
+   "kind": "friction",
+   "sec": 0.06,
+   "gain": 0.06,
+   "band": 0.25
+  },
+  "rim_shot": {
+   "kind": "click",
+   "sec": 0.018,
+   "gain": 0.12,
+   "band": 0.75
+  },
+  "liaison": null,
+  "break": null
+ },
+ "curves": {
+  "dynamics": {
+   "audio": true,
+   "where": "make_audio 逐样本插值"
+  },
+  "tempo": {
+   "audio": false,
+   "where": "分析/呈现用，音频不实现"
+  },
+  "pedal": {
+   "audio": false,
+   "where": "踏板另有 PedalSegment"
+  },
+  "brightness": {
+   "audio": false,
+   "where": "分析/呈现用"
+  },
+  "expression": {
+   "audio": false,
+   "where": "分析/呈现用"
+  }
+ },
+ "harmony": {
+  "audio": false,
+  "where": "S02 分析（counterpoint/harmonic），不生成和声动作"
+ }
+}

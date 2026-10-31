@@ -1,0 +1,18 @@
+{
+ "sources": {
+  "perform/ms_instruments.py": "0e4e5cc685adafe956744c7cfc34f4bad3f7ec5322b1f71d3b09a17e25df2e44",
+  "perform/ms_articulation.py": "2b00201ba27263e661652eed173cfa2fc9450e90e2740fd8adcd1f349e8b7b3e",
+  "perform/ms_ornament.py": "7f66f1d269be40264983121a0b26627ae66a11c73e3afdaa19cae06f2dd43a0c",
+  "perform/ms_performance.py": "e5ce2f74cbc32dc8256e261516074b882252af835a24e3b182fef2274948bfac"
+ },
+ "files": [
+  "MD写作约束.md",
+  "README.md",
+  "乐器速查.md",
+  "写作前必读.md",
+  "旧档案线格式.md",
+  "演奏语义对照.md",
+  "装饰音数学写法.md",
+  "速查卡.md"
+ ]
+}

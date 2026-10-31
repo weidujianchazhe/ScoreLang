@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1236" height="126" viewBox="0 0 1236 126">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<line class="staffline" x1="36.0" y1="66.0" x2="1236.0" y2="66.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="58.0" x2="1236.0" y2="58.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="50.0" x2="1236.0" y2="50.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="42.0" x2="1236.0" y2="42.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="34.0" x2="1236.0" y2="34.0" stroke="#333" stroke-width="0.7"/>
+<text class="clef" x="4" y="64.0" font-size="16" fill="#333">𝄞</text>
+<ellipse class="note" data-id="L00000001" cx="36.0" cy="74.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="39.2" y1="74.0" x2="39.2" y2="48.4" stroke="#111" stroke-width="0.8"/>
+<line class="ledger" x1="31.0" y1="74.0" x2="41.0" y2="74.0" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000002" cx="96.0" cy="70.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="99.2" y1="70.0" x2="99.2" y2="44.4" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000003" cx="156.0" cy="66.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="159.2" y1="66.0" x2="159.2" y2="40.4" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000004" cx="216.0" cy="62.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="219.2" y1="62.0" x2="219.2" y2="36.4" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000005" cx="276.0" cy="58.0" rx="3.6" ry="2.7" fill="#111" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="279.2" y1="58.0" x2="279.2" y2="32.4" stroke="#111" stroke-width="0.8"/>
+<line class="beam" x1="39.2" y1="46.4" x2="99.2" y2="46.4" stroke="#111" stroke-width="2.4"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1236" height="182" viewBox="0 0 1236 182">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<line class="staffline" x1="36.0" y1="66.0" x2="1236.0" y2="66.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="58.0" x2="1236.0" y2="58.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="50.0" x2="1236.0" y2="50.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="42.0" x2="1236.0" y2="42.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="34.0" x2="1236.0" y2="34.0" stroke="#333" stroke-width="0.7"/>
+<text class="clef" x="4" y="64.0" font-size="16" fill="#333">𝄞</text>
+<ellipse class="note" data-id="L00000001" cx="36.0" cy="74.0" rx="3.6" ry="2.7" fill="#fff" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="39.2" y1="74.0" x2="39.2" y2="48.4" stroke="#111" stroke-width="0.8"/>
+<line class="ledger" x1="31.0" y1="74.0" x2="41.0" y2="74.0" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000002" cx="36.0" cy="66.0" rx="3.6" ry="2.7" fill="#fff" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="39.2" y1="66.0" x2="39.2" y2="40.4" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000003" cx="36.0" cy="58.0" rx="3.6" ry="2.7" fill="#fff" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="39.2" y1="58.0" x2="39.2" y2="32.4" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000004" cx="156.0" cy="62.0" rx="3.6" ry="2.7" fill="#fff" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="159.2" y1="62.0" x2="159.2" y2="36.4" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000005" cx="156.0" cy="54.0" rx="3.6" ry="2.7" fill="#fff" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="159.2" y1="54.0" x2="159.2" y2="28.4" stroke="#111" stroke-width="0.8"/>
+<ellipse class="note" data-id="L00000006" cx="156.0" cy="46.0" rx="3.6" ry="2.7" fill="#fff" stroke="#111" stroke-width="0.9"/>
+<line class="stem" x1="159.2" y1="46.0" x2="159.2" y2="20.4" stroke="#111" stroke-width="0.8"/>
+<line class="staffline" x1="36.0" y1="146.0" x2="1236.0" y2="146.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="138.0" x2="1236.0" y2="138.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="130.0" x2="1236.0" y2="130.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="122.0" x2="1236.0" y2="122.0" stroke="#333" stroke-width="0.7"/>
+<line class="staffline" x1="36.0" y1="114.0" x2="1236.0" y2="114.0" stroke="#333" stroke-width="0.7"/>
+<text class="clef" x="4" y="144.0" font-size="16" fill="#333">𝄢</text>
+</svg>

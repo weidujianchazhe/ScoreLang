@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.1 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<!-- 针对性 fixture：三连音 + 附点 + 临时记号作用域 + 双声部（含 backup） -->
+<score-partwise version="3.1">
+  <part-list><score-part id="P1"><part-name>Piano</part-name></score-part></part-list>
+  <part id="P1">
+    <measure number="1">
+      <attributes>
+        <divisions>12</divisions>
+        <key><fifths>0</fifths></key>
+        <time><beats>4</beats><beat-type>4</beat-type></time>
+      </attributes>
+      <!-- 三连音：3 个八分共占 1 个四分（3:2，各 duration=4） -->
+      <note>
+        <pitch><step>C</step><octave>5</octave></pitch>
+        <duration>4</duration><type>eighth</type><voice>1</voice>
+        <time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes></time-modification>
+        <notations><tuplet type="start" number="1"/></notations>
+      </note>
+      <note>
+        <pitch><step>D</step><octave>5</octave></pitch>
+        <duration>4</duration><type>eighth</type><voice>1</voice>
+        <time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes></time-modification>
+      </note>
+      <note>
+        <pitch><step>E</step><octave>5</octave></pitch>
+        <duration>4</duration><type>eighth</type><voice>1</voice>
+        <time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes></time-modification>
+        <notations><tuplet type="stop" number="1"/></notations>
+      </note>
+      <!-- 附点八分 F5 + 十六分 G#5（临时记号） -->
+      <note>
+        <pitch><step>F</step><octave>5</octave></pitch>
+        <duration>6</duration><type>eighth</type><dot/><voice>1</voice>
+      </note>
+      <note>
+        <pitch><step>G</step><alter>1</alter><octave>5</octave></pitch>
+        <accidental>sharp</accidental>
+        <duration>2</duration><type>16th</type><voice>1</voice>
+      </note>
+      <!-- 同小节 G5 无记号 → 沿用 #（音高 80） -->
+      <note>
+        <pitch><step>G</step><alter>1</alter><octave>5</octave></pitch>
+        <duration>4</duration><type>quarter</type><voice>1</voice>
+      </note>
+      <!-- 补满第 3–4 拍：二分 A5 -->
+      <note>
+        <pitch><step>A</step><octave>5</octave></pitch>
+        <duration>24</duration><type>half</type><voice>1</voice>
+      </note>
+      <backup><duration>48</duration></backup>
+      <!-- 声部2：全音符 C3，与小节起点对齐 -->
+      <note>
+        <pitch><step>C</step><octave>3</octave></pitch>
+        <duration>48</duration><type>whole</type><voice>2</voice>
+      </note>
+    </measure>
+    <measure number="2">
+      <!-- 新小节 G5 无记号 → 还原（音高 79） -->
+      <note>
+        <pitch><step>G</step><octave>5</octave></pitch>
+        <duration>48</duration><type>whole</type><voice>1</voice>
+      </note>
+    </measure>
+  </part>
+</score-partwise>
